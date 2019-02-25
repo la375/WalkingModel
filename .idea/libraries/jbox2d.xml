@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="jbox2d">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jbox2d.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/jbox2d.jar!/doc" />
+      <root url="jar://$PROJECT_DIR$/jbox2d.jar!/org/jbox2d/p5/doc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/jbox2d.jar!/" />
+    </SOURCES>
+  </library>
+</component>
