@@ -632,7 +632,7 @@ public class GameSingleThread {
             Vec2 RHipCur = rHipJ.getAnchor1();
 
 
-            // if right ankle joint is behind the right hip jiont
+            // if right ankle joint is behind the right hip joint
             // Set ankle motor speed to 1;
             // else speed 2
             if (RAnkleCur.x < RHipCur.x) {

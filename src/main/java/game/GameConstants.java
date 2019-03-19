@@ -33,17 +33,18 @@ class GameConstants {
      */
     static final float rFootPosX = -0.96750f, rFootPosY = 7.77200f, lFootPosX = 3.763f, lFootPosY = 8.101f;
     static final float rFootAng = 0.7498f, rFootMass = 11.630f, rFootInertia = 9.017f, rFootL = 2.68750f,
-            rFootH = 1.44249f, rFootFric = 1.5f, rFootDensity = 3f, lFootAng = 0.1429f, lFootMass = 10.895f,
-            lFootInertia = 8.242f, lFootL = 2.695f, lFootH = 1.34750f, lFootFric = 1.5f, lFootDensity = 3f;
+            rFootH = 1.44249f, rFootFric = 1.5f, rFootDensity = 3f, lFootAng = 0.1429f, lFootMass = rFootMass /*10.895f*/,
+            lFootInertia = rFootInertia /*8.242f*/, lFootL = rFootL /*2.695f*/, lFootH = rFootH /*1.34750f*/, lFootFric = 1.5f, lFootDensity = 3f;
 
     /**
      * Shank parameters.
      */
     static final float rCalfPosX = 0.0850f, rCalfPosY = 5.381f, lCalfPosX = 2.986f, lCalfPosY = 5.523f;
     static final float rCalfAng = -0.821f, lCalfAng = -1.582f, rCalfAngAdj = 1.606188724f, lCalfAngAdj =
-            1.607108307f, rCalfMass = 7.407f, lCalfMass = 7.464f, rCalfInertia = 16.644f, lCalfInertia = 16.893f;
+            1.606188724f /*1.607108307f*/, rCalfMass = 7.407f, lCalfMass = rCalfMass /*7.464f*/, rCalfInertia = 16.644f,
+            lCalfInertia = rCalfInertia /*16.893f*/;
     // Length and width for the calves are just for collisions with the ground, so not very important.
-    static final float rCalfL = 4.21f, lCalfL = 4.43f, rCalfW = 0.4f, lCalfW = 0.4f, rCalfFric = 0.2f,
+    static final float rCalfL = 4.21f, lCalfL = rCalfL /*4.43f*/, rCalfW = 0.4f, lCalfW = 0.4f, rCalfFric = 0.2f,
             lCalfFric = 0.2f, rCalfDensity = 1f, lCalfDensity = 1f;
 
     /**
@@ -51,9 +52,9 @@ class GameConstants {
      */
     static final float rThighPosX = 1.659f, rThighPosY = 1.999f, lThighPosX = 2.52f, lThighPosY = 1.615f,
             rThighAng = 1.468f, lThighAng = -1.977f, rThighAngAdj = -1.544382589f, lThighAngAdj = 1.619256373f,
-            rThighMass = 10.54f, lThighMass = 10.037f, rThighInertia = 28.067f, lThighInertia = 24.546f;
+            rThighMass = 10.54f, lThighMass = rThighMass /*10.037f*/, rThighInertia = 28.067f, lThighInertia = rThighInertia /*24.546f*/;
     // Length and width for the calves are just for collisions with the ground, so not very important.
-    static final float rThighL = 4.19f, lThighL = 3.56f, rThighW = 0.6f, lThighW = 0.6f, rThighFric = 0.2f,
+    static final float rThighL = 4.19f, lThighL = rThighL /*3.56f*/, rThighW = 0.6f, lThighW = 0.6f, rThighFric = 0.2f,
             lThighFric = 0.2f, rThighDensity = 1f, lThighDensity = 1f;
 
     /**
@@ -77,9 +78,9 @@ class GameConstants {
      */
     static final float rUArmPosX = 1.165f, rUArmPosY = -3.616f, lUArmPosX = 4.475f, lUArmPosY = -2.911f,
             rUArmAng = -0.466f, lUArmAng = 0.843f, rUArmAngAdj = 1.571196588f, lUArmAngAdj = -1.690706418f,
-            rUArmMass = 5.837f, lUArmMass = 4.6065f, rUArmInertia = 8.479f, lUArmInertia = 5.85f;
+            rUArmMass = 5.837f, lUArmMass = rUArmMass /*4.6065f*/, rUArmInertia = 8.479f, lUArmInertia = rUArmInertia /*5.85f*/;
     // Dimensions for collision shapes
-    static final float rUArmL = 2.58f, lUArmL = 2.68f, rUArmW = 0.2f, lUArmW = 0.15f,
+    static final float rUArmL = 2.58f, lUArmL = rUArmL /*2.68f*/, rUArmW = 0.2f, lUArmW = rUArmW /*0.15f*/,
             rUArmFric = 0.2f, lUArmFric = 0.2f, rUArmDensity = 1f, lUArmDensity = 1f;
 
     /**
@@ -87,13 +88,13 @@ class GameConstants {
      */
     static final float rLArmPosX = 0.3662f, rLArmPosY = -1.248f, lLArmPosX = 5.899f, lLArmPosY = -3.06f,
             rLArmAng = -1.762f, lLArmAng = -1.251f, rLArmAngAdj = 1.521319096f, lLArmAngAdj = 1.447045854f,
-            rLArmMass = 5.99f, lLArmMass = 3.8445f, rLArmInertia = 10.768f, lLArmInertia = 4.301f;
+            rLArmMass = 5.99f, lLArmMass = rLArmMass /*3.8445f*/, rLArmInertia = 10.768f, lLArmInertia = rLArmInertia /*4.301f*/;
     // For collision shapes
-    static final float rLArmL = 3.56f, lLArmL = 2.54f, rLArmW = 0.15f, lLArmW = 0.12f,
+    static final float rLArmL = 3.56f, lLArmL = rLArmL /*2.54f*/, rLArmW = 0.15f, lLArmW = rLArmW /*0.12f*/,
             rLArmFric = 0.2f, lLArmFric = 0.2f, rLArmDensity = 1f, lLArmDensity = 1f;
 
     /**
-     * Joint speed setpoints.
+     * Joint speed setpoints. rad/sec
      */
     static final float rAnkleSpeed1 = 2f, rAnkleSpeed2 = -2f, lAnkleSpeed1 = -2f, lAnkleSpeed2 = 2f,
             rKneeSpeed1 = -2.5f, rKneeSpeed2 = 2.5f, lKneeSpeed1 = 2.5f, lKneeSpeed2 = -2.5f,
@@ -103,7 +104,7 @@ class GameConstants {
     /**
      * Joint limits.
      */
-    static final float oRHipLimLo = -1.3f, oRHipLimHi = 0.7f, oLHipLimLo = -1f, oLHipLimHi = 1f, //O Hip
+    static final float oRHipLimLo = -1.3f, oRHipLimHi = 0.7f, oLHipLimLo = oRHipLimLo /*-1f*/, oLHipLimHi = oRHipLimHi /*1f*/, //O Hip
     // limits (changed to this when o is pressed):
     pRHipLimLo = -0.8f, pRHipLimHi = 1.2f, pLHipLimLo = -1.5f, pLHipLimHi = 0.5f; //P Hip limits
 

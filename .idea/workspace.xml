@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65f61770-05ae-40e3-a152-4b5edb740878" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jbox2d.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/GameConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/GameConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/GameSingleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/GameSingleThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/game/GameConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/GameConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/game/GameSingleThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/GameSingleThread.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,29 +17,159 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PlayableQWOP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="339">
+              <caret line="83" column="50" lean-forward="true" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
+              <folding>
+                <element signature="docComment;class#PlayableQWOP#0" />
+                <element signature="docComment;field#q#0;class#PlayableQWOP#0" />
+                <element signature="docComment;field#game#0;class#PlayableQWOP#0" />
+                <element signature="method#actionPerformed#0;class#PlayableQWOP#0" />
+                <element signature="method#paint#0;class#PlayableQWOP#0" />
+                <element signature="method#keyPressed#0;class#PlayableQWOP#0" />
+                <element signature="e#1332#1794#0" />
+                <element signature="method#keyReleased#0;class#PlayableQWOP#0" />
+                <element signature="e#1898#2237#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PlayableQWOP.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/GameSingleThreadWithDraw.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+            <state relative-caret-position="1394">
+              <caret line="90" column="53" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/GameSingleThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2516">
+              <caret line="776" selection-start-line="776" selection-end-line="776" />
+              <folding>
+                <element signature="docComment;class#GameSingleThread#0" />
+                <element signature="e#1227#1300#0" />
+                <element signature="e#1354#1411#0" />
+                <element signature="e#1444#1505#0" />
+                <element signature="e#1549#1626#0" />
+                <element signature="e#2302#2392#0" />
+                <element signature="e#2437#2497#0" />
+                <element signature="e#3897#4048#0" />
+                <element signature="e#5847#5888#0" />
+                <element signature="e#6117#6378#0" />
+                <element signature="e#6192#6284#1" />
+                <element signature="e#6384#6490#0" />
+                <element signature="e#6384#11938#0" />
+                <element signature="e#11944#20590#0" />
+                <element signature="e#12253#12360#0" />
+                <element signature="e#12601#12820#1" />
+                <element signature="e#13988#15128#1" />
+                <element signature="e#19880#20584#1" />
+                <element signature="e#20596#21379#0" />
+                <element signature="e#20679#20830#1" />
+                <element signature="e#21385#21664#0" />
+                <element signature="e#21460#21592#1" />
+                <element signature="e#21670#21755#0" />
+                <element signature="e#21670#26377#0" />
+                <element signature="e#23108#23406#1" />
+                <element signature="e#23419#23717#1" />
+                <element signature="e#23723#23946#1" />
+                <element signature="e#24045#24966#1" />
+                <element signature="e#24286#24339#0" />
+                <element signature="e#24452#24522#1" />
+                <element signature="e#24528#24598#1" />
+                <element signature="e#24613#24697#0" />
+                <element signature="e#24809#24879#1" />
+                <element signature="e#24885#24955#1" />
+                <element signature="e#25015#25435#1" />
+                <element signature="e#25029#25052#0" />
+                <element signature="e#25448#25864#1" />
+                <element signature="e#25462#25485#0" />
+                <element signature="e#25870#26039#1" />
+                <element signature="e#25885#25908#0" />
+                <element signature="e#26250#26340#1" />
+                <element signature="e#26383#26430#0" />
+                <element signature="e#26496#26579#0" />
+                <element signature="e#26661#26721#0" />
+                <element signature="e#26661#27511#0" />
+                <element signature="e#27517#27577#0" />
+                <element signature="e#27517#27969#0" />
+                <element signature="e#27975#28020#0" />
+                <element signature="e#28097#28188#0" />
+                <element signature="e#28277#28432#0" />
+                <element signature="e#28750#28988#0" />
+                <element signature="e#28994#29057#0" />
+                <element signature="e#29254#29312#0" />
+                <element signature="e#29415#29714#0" />
+                <element signature="e#29415#31079#0" />
+                <element signature="e#30025#30212#1" />
+                <element signature="e#30218#30383#1" />
+                <element signature="e#30434#30862#1" />
+                <element signature="e#30661#30852#1" />
+                <element signature="e#31085#31322#0" />
+                <element signature="e#31328#31429#0" />
+                <element signature="e#31328#34114#0" />
+                <element signature="e#31504#31586#0" />
+                <element signature="e#31639#31720#0" />
+                <element signature="e#31773#31804#0" />
+                <element signature="e#31814#33025#0" />
+                <element signature="e#32356#32404#1" />
+                <element signature="e#32624#32673#1" />
+                <element signature="e#32766#32873#1" />
+                <element signature="e#32767#32779#0" />
+                <element signature="e#32966#33015#1" />
+                <element signature="e#33035#33104#0" />
+                <element signature="e#33114#33615#0" />
+                <element signature="e#33412#33462#1" />
+                <element signature="e#33555#33605#1" />
+                <element signature="e#33625#33694#0" />
+                <element signature="e#33704#33779#0" />
+                <element signature="e#33912#33986#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/GameConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="96" column="37" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>makeNewWorld</find>
+      <find>stepGame</find>
+      <find>step</find>
+      <find>Mass</find>
+      <find>rAnkleSpeed1</find>
+      <find>noFeet</find>
+      <find>rCalfDef</find>
+      <find>rFootShape</find>
+      <find>rKneeSpeed2</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/game/GameSingleThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/GameConstants.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="100" />
@@ -50,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -76,15 +208,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WalkingModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WalkingModel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551123029324" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551376455847" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jbox2d.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -132,32 +273,32 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27956298" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50064266" side_tool="true" visible="true" weight="0.3293011" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.4993573" weight="0.3293011" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.3293011" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293011" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.3293011" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50064266" side_tool="true" weight="0.3293011" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4993573" weight="0.3293011" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -168,10 +309,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/jbox2d.jar!/org/jbox2d/dynamics/Body.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="820" column="34" selection-start-line="820" selection-start-column="30" selection-end-line="820" selection-end-column="34" />
+          <folding>
+            <element signature="e#22568#22569#0" expanded="true" />
+            <element signature="e#22614#22615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jbox2d.jar!/org/jbox2d/dynamics/joints/RevoluteJointDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PlayableQWOP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        <state relative-caret-position="339">
+          <caret line="83" column="50" lean-forward="true" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
+          <folding>
+            <element signature="docComment;class#PlayableQWOP#0" />
+            <element signature="docComment;field#q#0;class#PlayableQWOP#0" />
+            <element signature="docComment;field#game#0;class#PlayableQWOP#0" />
+            <element signature="method#actionPerformed#0;class#PlayableQWOP#0" />
+            <element signature="method#paint#0;class#PlayableQWOP#0" />
+            <element signature="method#keyPressed#0;class#PlayableQWOP#0" />
+            <element signature="e#1332#1794#0" />
+            <element signature="method#keyReleased#0;class#PlayableQWOP#0" />
+            <element signature="e#1898#2237#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/GameSingleThreadWithDraw.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="90" column="53" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/GameSingleThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2516">
+          <caret line="776" selection-start-line="776" selection-end-line="776" />
+          <folding>
+            <element signature="docComment;class#GameSingleThread#0" />
+            <element signature="e#1227#1300#0" />
+            <element signature="e#1354#1411#0" />
+            <element signature="e#1444#1505#0" />
+            <element signature="e#1549#1626#0" />
+            <element signature="e#2302#2392#0" />
+            <element signature="e#2437#2497#0" />
+            <element signature="e#3897#4048#0" />
+            <element signature="e#5847#5888#0" />
+            <element signature="e#6117#6378#0" />
+            <element signature="e#6192#6284#1" />
+            <element signature="e#6384#6490#0" />
+            <element signature="e#6384#11938#0" />
+            <element signature="e#11944#20590#0" />
+            <element signature="e#12253#12360#0" />
+            <element signature="e#12601#12820#1" />
+            <element signature="e#13988#15128#1" />
+            <element signature="e#19880#20584#1" />
+            <element signature="e#20596#21379#0" />
+            <element signature="e#20679#20830#1" />
+            <element signature="e#21385#21664#0" />
+            <element signature="e#21460#21592#1" />
+            <element signature="e#21670#21755#0" />
+            <element signature="e#21670#26377#0" />
+            <element signature="e#23108#23406#1" />
+            <element signature="e#23419#23717#1" />
+            <element signature="e#23723#23946#1" />
+            <element signature="e#24045#24966#1" />
+            <element signature="e#24286#24339#0" />
+            <element signature="e#24452#24522#1" />
+            <element signature="e#24528#24598#1" />
+            <element signature="e#24613#24697#0" />
+            <element signature="e#24809#24879#1" />
+            <element signature="e#24885#24955#1" />
+            <element signature="e#25015#25435#1" />
+            <element signature="e#25029#25052#0" />
+            <element signature="e#25448#25864#1" />
+            <element signature="e#25462#25485#0" />
+            <element signature="e#25870#26039#1" />
+            <element signature="e#25885#25908#0" />
+            <element signature="e#26250#26340#1" />
+            <element signature="e#26383#26430#0" />
+            <element signature="e#26496#26579#0" />
+            <element signature="e#26661#26721#0" />
+            <element signature="e#26661#27511#0" />
+            <element signature="e#27517#27577#0" />
+            <element signature="e#27517#27969#0" />
+            <element signature="e#27975#28020#0" />
+            <element signature="e#28097#28188#0" />
+            <element signature="e#28277#28432#0" />
+            <element signature="e#28750#28988#0" />
+            <element signature="e#28994#29057#0" />
+            <element signature="e#29254#29312#0" />
+            <element signature="e#29415#29714#0" />
+            <element signature="e#29415#31079#0" />
+            <element signature="e#30025#30212#1" />
+            <element signature="e#30218#30383#1" />
+            <element signature="e#30434#30862#1" />
+            <element signature="e#30661#30852#1" />
+            <element signature="e#31085#31322#0" />
+            <element signature="e#31328#31429#0" />
+            <element signature="e#31328#34114#0" />
+            <element signature="e#31504#31586#0" />
+            <element signature="e#31639#31720#0" />
+            <element signature="e#31773#31804#0" />
+            <element signature="e#31814#33025#0" />
+            <element signature="e#32356#32404#1" />
+            <element signature="e#32624#32673#1" />
+            <element signature="e#32766#32873#1" />
+            <element signature="e#32767#32779#0" />
+            <element signature="e#32966#33015#1" />
+            <element signature="e#33035#33104#0" />
+            <element signature="e#33114#33615#0" />
+            <element signature="e#33412#33462#1" />
+            <element signature="e#33555#33605#1" />
+            <element signature="e#33625#33694#0" />
+            <element signature="e#33704#33779#0" />
+            <element signature="e#33912#33986#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/GameConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="96" column="37" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -232,6 +503,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
