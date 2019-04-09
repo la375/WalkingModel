@@ -6,6 +6,7 @@ gaitPeriod = 1;
 stepLength = 0.1;
 stepHeight = 0.025;
 numPoints  = 150; 
+footLength = 0.02;
 
 tVec = linspace(0,gaitPeriod,numPoints);
 foot_height_offset = sqrt( (lower_leg_length+upper_leg_length)^2 ...
@@ -60,29 +61,31 @@ for idx = 1:numPoints
 end
 
 % Display joint angles
-figure
-subplot(311)
-plot(tVec,rad2deg(theta_hip))
-title('Hip Angle [deg]');
-subplot(312)
-plot(tVec,rad2deg(theta_knee))
-title('Knee Angle [deg]');
-subplot(313)
-plot(tVec,rad2deg(theta_ankle))
-title('Ankle Angle [deg]');
+% figure
+% subplot(311)
+% plot(tVec,rad2deg(theta_hip))
+% title('Hip Angle [deg]');
+% subplot(312)
+% plot(tVec,rad2deg(theta_knee))
+% title('Knee Angle [deg]');
+% subplot(313)
+% plot(tVec,rad2deg(theta_ankle))
+% title('Ankle Angle [deg]');
                      
 %% Animate the walking gait
 figure(3), clf, hold on
 
 % Initialize plot
 % plot(x,y-foot_height_offset/100,'k:','LineWidth',1);
-numOfPairsLegs = 3;
-h(numOfPairsLegs,4) = nan;
+numOfPairsLegs = 1;
+h(numOfPairsLegs,6) = nan;
 for i=1:numOfPairsLegs
     h(i,1) = plot([0 0],[0 0],'r-','LineWidth',4);
     h(i,2) = plot([0 0],[0 0],'r-','LineWidth',4);
     h(i,3) = plot([0 0],[0 0],'b-','LineWidth',4);
     h(i,4) = plot([0 0],[0 0],'b-','LineWidth',4);
+    h(i,5) = plot([0 0],[0 0],'g-','LineWidth',4);
+    h(i,6) = plot([0 0],[0 0],'g-','LineWidth',4);
 end
 
 % Calculate knee and ankle (x,y) positions
@@ -98,7 +101,7 @@ yMin = min([yKnee;yAnkle]) -0.025;
 yMax = max([0;yKnee;yAnkle]) +0.025;
 
 % Animate the walking gait
-numAnimations = 10;
+numAnimations = 5;
 delta = 0.1;
 set(plot([0 0],[0 0],'g-','LineWidth',2),'xdata',[-(numOfPairsLegs)*delta -delta],'ydata',[0 0]);
 for anim = 1:numAnimations
@@ -114,11 +117,15 @@ for anim = 1:numAnimations
                 set(h(leg,2),'xdata',[xKnee(index)-posOffset xAnkle(index)-posOffset],'ydata',[yKnee(index) yAnkle(index)]);
                 set(h(leg,3),'xdata',[0-posOffset xKnee(idx)-posOffset],'ydata',[0 yKnee(idx)]);
                 set(h(leg,4),'xdata',[xKnee(idx)-posOffset xAnkle(idx)-posOffset],'ydata',[yKnee(idx) yAnkle(idx)]);
+                set(h(leg,6),'xdata',[xAnkle(index)-posOffset xAnkle(index)-posOffset + footLength*cos(theta_ankle(index))],'ydata',[yAnkle(index) yAnkle(index)-footLength*sin(theta_ankle(index))]);
+                set(h(leg,5),'xdata',[xAnkle(idx)-posOffset xAnkle(idx)-posOffset + footLength*cos(theta_ankle(idx))],'ydata',[yAnkle(idx) yAnkle(idx)-footLength*sin(theta_ankle(idx))]);
             else
                 set(h(leg,3),'xdata',[0-posOffset xKnee(index)-posOffset],'ydata',[0 yKnee(index)]);
                 set(h(leg,4),'xdata',[xKnee(index)-posOffset xAnkle(index)-posOffset],'ydata',[yKnee(index) yAnkle(index)]);
                 set(h(leg,1),'xdata',[0-posOffset xKnee(idx)-posOffset],'ydata',[0 yKnee(idx)]);
                 set(h(leg,2),'xdata',[xKnee(idx)-posOffset xAnkle(idx)-posOffset],'ydata',[yKnee(idx) yAnkle(idx)]);
+                set(h(leg,5),'xdata',[xAnkle(index)-posOffset xAnkle(index)-posOffset + footLength*cos(theta_ankle(index))],'ydata',[yAnkle(index) yAnkle(index)-footLength*sin(theta_ankle(index))]);
+                set(h(leg,6),'xdata',[xAnkle(idx)-posOffset xAnkle(idx)-posOffset + footLength*cos(theta_ankle(idx))],'ydata',[yAnkle(idx) yAnkle(idx)-footLength*sin(theta_ankle(idx))]);
             end
         end
         xlim([xMin xMax]), ylim([yMin yMax]);
