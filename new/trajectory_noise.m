@@ -61,15 +61,15 @@ ankle=(theta_ankle);
 % curve gitting
 [h2n_s1, h2n_s2,h2n_w1,h2n_w2,mid1,mid2] = state_fitting_loop(hip,knee);
 [ knee_fit ] = state_fit_plot(hip, h2n_s1, h2n_s2,h2n_w1,h2n_w2,mid1,mid2 );
-figure; hold on
-plot(hip,knee_fit,'o')
-plot(hip,knee)
+% figure; hold on
+% plot(hip,knee_fit,'o')
+% plot(hip,knee)
 
 [n2a_s1, n2a_s2, n2a_w1, n2a_w2,mid1,mid2] = state_fitting_loop(knee,ankle);
 [ ankle_fit ] = state_fit_plot( knee_fit, n2a_s1, n2a_s2, n2a_w1, n2a_w2,mid1,mid2 );
-figure; hold on
-plot(knee_fit,ankle_fit,'o')
-plot(knee,ankle)
+% figure; hold on
+% plot(knee_fit,ankle_fit,'o')
+% plot(knee,ankle)
 
 
 %% Plot fitted trajectory
@@ -88,8 +88,22 @@ plot(xAnkle,yAnkle)
 
 %% Plot fitted noisy trajectory
 % noise = (rand( numPoints,1)*2-1)*max(knee_fit)*1;
-noise = (rand( numPoints,1))*max(knee_fit)*3;
-knee_fit2 = noise + knee_fit;
+knee_fit2 = zeros(numPoints,1);
+max_in_knee = max(knee_fit);
+er_array = zeros(1, numPoints);
+
+%rand*max_in_knee
+for i=1:numPoints
+    er_array(i) = er_array(i) + rand*max_in_knee/15 ;
+end
+
+for i=1:numPoints
+    total = 0;
+    for j = 1:i
+        total = total+er_array(j);
+    end
+    knee_fit2(i) = total + knee_fit(i);
+end
 
 theta_hip_1 = (hip);
 theta_knee_2 =(knee_fit2);
@@ -101,7 +115,7 @@ xAnkle2 = xKnee + sin(theta_hip_1+theta_knee_2)*lower_leg_length/100;
 yAnkle2 = yKnee - cos(theta_hip_1+theta_knee_2)*lower_leg_length/100;
 
 figure(1)
-plot(xAnkle2,yAnkle2)
+plot(xAnkle2,yAnkle2,'--')
 
 %% minus noise
 
@@ -122,5 +136,43 @@ for i = 2:numPoints
 end
 
 figure(1)
-plot(xAnkle3,yAnkle3)
+plot(xAnkle2,yAnkle3)
 legend('1','2','noise','noise adaptive')
+
+
+%follow sequence
+Kp = -1.5;
+Ki = 0;
+Kd = 0.075;
+P_error = [0;0];
+I_error = [0;0];
+D_error = [0;0];
+drive = [0;0];
+curr_pos = [0;0];
+prev_pos = [0;0];
+error = [0;0];
+prev_e = [0;0];
+ideal = [xAnkle';yAnkle'];
+noise = [er_array;er_array];
+startpos = [stepLength/2;0];
+curr_pos = startpos;
+linar= zeros(2,numPoints);
+linar(:,1) = startpos;
+for i = 2: numPoints
+    prev_e = error;
+    error = curr_pos-ideal(:,i);
+    D_error = error-prev_e;
+    P_error = error;
+    I_error = I_error + error;
+    drive = Kp*P_error + Ki*I_error + Kd*D_error;
+    
+    prev_pos = curr_pos;
+    curr_pos = prev_pos+drive+noise(:,i);
+    linar(:,i) = curr_pos;
+end
+
+close all 
+plot(linar(1,:), linar(2,:));
+hold on;
+plot(ideal(1,:), ideal(2,:));
+
